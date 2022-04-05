@@ -1,9 +1,11 @@
-<div class="bg-slate-400 hover:bg-blue-400 w-full px-4 pt-4 pb-2 text-black hover:text-white"> 
-    <div class="flex justify-between">
-        <app-atom-icon [name]='box.icon1'></app-atom-icon>
-        <app-atom-icon [name]='box.icon2'></app-atom-icon> 
+<div class="bg-white hover:bg-[#438FFE] w-full px-4 pt-4 pb-2 text-black hover:text-white box cursor-pointer"> 
+    <div class="flex justify-between items-center">
+        <div class="flex justify-center items-center h-12 w-12 bg-[#f4f9f4] box1">
+            <i class="fa {{box.icon1}} {{box.color1}} text-2xl" aria-hidden="true"></i>
+        </div>
+        <i class="fa {{box.icon2}} {{box.color2}} text-5xl" aria-hidden="true"></i>
     </div>
     <div class="py-1">{{box.total}}</div>
-    <div class="font-bold text-xl">{{box.number}}</div>
+    <div class="font-semibold text-xl">{{box.number}}</div>
     <div class="border-t pt-2 mt-6">{{box.title}}</div>
 </div>

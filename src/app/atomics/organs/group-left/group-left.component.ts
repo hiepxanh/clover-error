@@ -6,7 +6,12 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./group-left.component.scss']
 })
 export class GroupLeftComponent implements OnInit {
-  @Input() icons = ['fa-plus-square-o', 'fa-shopping-cart', 'fa-file-text', 'fa-cog']
+  icons = [
+    'fa-shopping-cart','fa-file-text', 'fa-cog'
+  ]
+  icons2 = [
+   'fa-circle','fa-sign-out'
+  ]
 
   constructor() { }
 

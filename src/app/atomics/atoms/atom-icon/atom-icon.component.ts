@@ -7,6 +7,11 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export default class AtomIconComponent implements OnInit {
   @Input() name!:string;
+  @Input() color1 = '';
+  @Input() color2 = '';
+  @Input() checkIcon = true;
+  @Input() bg ='';
+
 
   constructor() { }
 

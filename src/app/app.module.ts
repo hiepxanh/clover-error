@@ -16,11 +16,12 @@ import { GroupLeftComponent } from './atomics/organs/group-left/group-left.compo
 import { PageCoinComponent } from './pages/page-coin/page-coin.component';
 import { AtomBtnCoinComponent } from './atomics/atoms/atom-btn-coin/atom-btn-coin.component';
 import { MolecHeaderCoinComponent } from './atomics/molecs/molec-header-coin/molec-header-coin.component';
-import { PageDaskBoardComponent } from './pages/page-dask-board/page-dask-board.component';
-import { TeamplateDaskBoardComponent } from './atomics/teamplates/teamplate-dask-board/teamplate-dask-board.component';
 import { MolecMainCoinComponent } from './atomics/molecs/molec-main-coin/molec-main-coin.component';
 import { GroupCoinComponent } from './atomics/organs/group-coin/group-coin.component';
 import { TeamplateCoinComponent } from './atomics/teamplates/teamplate-coin/teamplate-coin.component';
+import { PageDashBoardComponent } from './pages/page-dash-board/page-dash-board.component';
+import { TeamplateDashBoardComponent } from './atomics/teamplates/teamplate-dash-board/teamplate-dash-board.component';
+
 
 
 
@@ -41,11 +42,12 @@ import { TeamplateCoinComponent } from './atomics/teamplates/teamplate-coin/team
     PageCoinComponent,
     AtomBtnCoinComponent,
     MolecHeaderCoinComponent,
-    PageDaskBoardComponent,
-    TeamplateDaskBoardComponent,
     MolecMainCoinComponent,
     GroupCoinComponent,
-    TeamplateCoinComponent
+    TeamplateCoinComponent,
+    PageDashBoardComponent,
+    TeamplateDashBoardComponent,
+  
     
   ],
   imports: [

@@ -1,6 +1,8 @@
-<div class="font-bold text-3xl py-6">DASK BOARD</div>
+<div class="font-medium text-xl py-6">
+    DashBoard
+</div>
 <div class="grid grid-cols-12 gap-x-12">
     <div *ngFor="let box of boxs" class="col-span-3">
-        <app-molec-box [box]="box"></app-molec-box>
+        <app-molec-box [box]='box'></app-molec-box>
     </div>
 </div>

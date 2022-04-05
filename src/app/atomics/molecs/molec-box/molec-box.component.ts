@@ -8,7 +8,6 @@ import { Component, Input, OnInit } from '@angular/core';
 export class MolecBoxComponent implements OnInit {
   @Input() box!: any;
 
-
   constructor() { }
 
   ngOnInit(): void {

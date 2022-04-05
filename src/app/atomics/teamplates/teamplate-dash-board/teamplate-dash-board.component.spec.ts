@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TeamplateDaskBoardComponent } from './teamplate-dask-board.component';
+import { TeamplateDashBoardComponent } from './teamplate-dash-board.component';
 
-describe('TeamplateDaskBoardComponent', () => {
-  let component: TeamplateDaskBoardComponent;
-  let fixture: ComponentFixture<TeamplateDaskBoardComponent>;
+describe('TeamplateDashBoardComponent', () => {
+  let component: TeamplateDashBoardComponent;
+  let fixture: ComponentFixture<TeamplateDashBoardComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TeamplateDaskBoardComponent ]
+      declarations: [ TeamplateDashBoardComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TeamplateDaskBoardComponent);
+    fixture = TestBed.createComponent(TeamplateDashBoardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
