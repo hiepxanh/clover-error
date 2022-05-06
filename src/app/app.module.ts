@@ -22,9 +22,12 @@ import { TeamplateCoinComponent } from './atomics/teamplates/teamplate-coin/team
 import { PageDashBoardComponent } from './pages/page-dash-board/page-dash-board.component';
 import { TeamplateDashBoardComponent } from './atomics/teamplates/teamplate-dash-board/teamplate-dash-board.component';
 
+import { RendererModule, TransferHttpCacheModule } from '@nguniversal/common/clover';
+// import { MAT_DATE_LOCALE } from '@angular/material/core';
 
-
-
+// import { registerLocaleData } from '@angular/common';
+// import localeCs from '@angular/common/locales/cs';
+// registerLocaleData(localeCs);
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,17 +50,25 @@ import { TeamplateDashBoardComponent } from './atomics/teamplates/teamplate-dash
     TeamplateCoinComponent,
     PageDashBoardComponent,
     TeamplateDashBoardComponent,
-  
-    
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-   
-   
+
 
   ],
-  providers: [],
+  imports: [
+    BrowserModule.withServerTransition({
+     appId: 'myapp',
+    }),
+    RendererModule.forRoot(),
+    TransferHttpCacheModule,
+    AppRoutingModule,
+
+
+
+  ],
+  providers: [
+    // {provide: LOCALE_ID, useValue: 'cs' },
+    // { provide: DEFAULT_CURRENCY_CODE, useValue: 'CZK' },
+    // { provide: MAT_DATE_LOCALE, useValue: 'cs' },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

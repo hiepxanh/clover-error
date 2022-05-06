@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'DaskBoard2';
+  a: number = 0.259;
+  b: number = 1.3495;
 }

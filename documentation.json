@@ -1,0 +1,2476 @@
+{
+    "pipes": [],
+    "interfaces": [
+        {
+            "name": "User",
+            "id": "interface-User-9c7e5f1bbbab702cb032307d130876cb68969b0cd4eedef32a0c8cad8081a54e5f8f577ed6ad4539c1b99a1d246cb34031d198c2ea8eba440e64e91b14f01fdc",
+            "file": "src/stories/User.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface User {}\n",
+            "properties": [],
+            "indexSignatures": [],
+            "methods": []
+        }
+    ],
+    "injectables": [],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-602154fab79648e13abb772021c99cdeeabeba7eb6a738a0489a16f02a6d054b8512f811858c56af325225eff7b08494b15dedbc094663cb3a9fa29552d93c2a",
+            "file": "src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-root",
+            "styleUrls": [
+                "./app.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./app.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "title",
+                    "defaultValue": "'DaskBoard2'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-root',\r\n  templateUrl: './app.component.html',\r\n  styleUrls: ['./app.component.scss']\r\n})\r\nexport class AppComponent {\r\n  title = 'DaskBoard2';\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./app.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<router-outlet></router-outlet>\r\n"
+        },
+        {
+            "name": "AtomBtnCoinComponent",
+            "id": "component-AtomBtnCoinComponent-dbf660feaf87757e8462e6c4052ed9105349b5c40a5b870fec6a6d70f3f33c6111e8a54208bc57bfe076967332f7ae93f9aab2771fa146f893f786c690a896f8",
+            "file": "src/app/atomics/atoms/atom-btn-coin/atom-btn-coin.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-atom-btn-coin",
+            "styleUrls": [
+                "./atom-btn-coin.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./atom-btn-coin.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "word",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-atom-btn-coin',\r\n  templateUrl: './atom-btn-coin.component.html',\r\n  styleUrls: ['./atom-btn-coin.component.scss']\r\n})\r\nexport class AtomBtnCoinComponent implements OnInit {\r\n  @Input()word!: string\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./atom-btn-coin.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 9
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\" rounded-lg m-2 border text-green-900 border-green-900 flex justify-center items-center px-4 py-2 cursor-pointer hover:text-white hover:bg-green-900\">\r\n    {{word}}\r\n</div>"
+        },
+        {
+            "name": "AtomBtnSearchComponent",
+            "id": "component-AtomBtnSearchComponent-6431f8512942be479a9a013000acb6e3ed354365a2f4131eb2476ee07dcfbe3d224cd2571765a16817cf72904cf1eb88ddde8d95189ce376554393dccebeeda1",
+            "file": "src/app/atomics/atoms/atom-btn-search/atom-btn-search.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-atom-btn-search",
+            "styleUrls": [
+                "./atom-btn-search.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./atom-btn-search.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-atom-btn-search',\r\n  templateUrl: './atom-btn-search.component.html',\r\n  styleUrls: ['./atom-btn-search.component.scss']\r\n})\r\nexport class AtomBtnSearchComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./atom-btn-search.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<button type=\"submit\"><div class=\"bg-[#438ffe] px-5 py-1.5 transform motion-safe:hover:scale-110 text-white\">Search</div></button>"
+        },
+        {
+            "name": "AtomIconComponent",
+            "id": "component-AtomIconComponent-5b3e645410adb13b8eeed1bf88c0985279416c74ebe64cf1a43d803887c0504ab5137ced03c3c22fade5ba5b646a05b60216592fc87919ac510054f255915c2c",
+            "file": "src/app/atomics/atoms/atom-icon/atom-icon.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-atom-icon",
+            "styleUrls": [
+                "./atom-icon.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./atom-icon.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "bg",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "checkIcon",
+                    "defaultValue": "true",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "color1",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "color2",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 18,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-atom-icon',\r\n  templateUrl: './atom-icon.component.html',\r\n  styleUrls: ['./atom-icon.component.scss']\r\n})\r\nexport default class AtomIconComponent implements OnInit {\r\n  @Input() name!:string;\r\n  @Input() color1 = '';\r\n  @Input() color2 = '';\r\n  @Input() checkIcon = true;\r\n  @Input() bg ='';\r\n\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".icon-color-blue{\r\n    color: #438ffe;\r\n}\r\n",
+                    "styleUrl": "./atom-icon.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 13
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<i [ngClass]=\"checkIcon ? color1 : color2\" class=\"fa {{name}}\" aria-hidden=\"true\" class=\"cursor-pointer\"></i>\r\n\r\n"
+        },
+        {
+            "name": "AtomInputComponent",
+            "id": "component-AtomInputComponent-7badc026740bca8d94aab8af7ca003b409d30a3c3f673160991c978c83836d5d5bc5c61ba8076322eee50ae65dc7caf08c0c70d0a3d20acd4630d6974529e4f6",
+            "file": "src/app/atomics/atoms/atom-input/atom-input.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-atom-input",
+            "styleUrls": [
+                "./atom-input.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./atom-input.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-atom-input',\r\n  templateUrl: './atom-input.component.html',\r\n  styleUrls: ['./atom-input.component.scss']\r\n})\r\nexport class AtomInputComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./atom-input.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"bg-[#f5f7f9] px-1 py-1.5\">\r\n    <i class=\"fa fa-search px-1 text-[#c1c6d0]\" aria-hidden=\"true\"></i>\r\n    <input type=\"text\" placeholder=\"Search for transaction, item, etc\" size=\"50\" class=\"text-sm bg-[#f5f7f9] focus:outline-none\">\r\n</div>\r\n"
+        },
+        {
+            "name": "AtomMenuListComponent",
+            "id": "component-AtomMenuListComponent-e51e66d1725c5f71f7cfb469acefa89cff7d450471ea656cc2aa65d2cca6f3abdb9efb186d186b17c89fbedf3f6b6bfcf0a466173692278b444e7f1bff838778",
+            "file": "src/app/atomics/atoms/atom-menu-list/atom-menu-list.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-atom-menu-list",
+            "styleUrls": [
+                "./atom-menu-list.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./atom-menu-list.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-atom-menu-list',\r\n  templateUrl: './atom-menu-list.component.html',\r\n  styleUrls: ['./atom-menu-list.component.scss']\r\n})\r\nexport class AtomMenuListComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./atom-menu-list.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"grid grid-cols-10 pt-4 pb-2 px-8 gap-x-4 font-bold text-lg\">\r\n    <div class=\"col-span-1\">No</div>\r\n    <div class=\"col-span-5 ml-24\">Book</div>\r\n    <div class=\"col-span-2\">Author</div>\r\n    <div class=\"col-span-1\">Sold</div>\r\n    <div class=\"col-span-1\">View</div>\r\n</div>\r\n"
+        },
+        {
+            "name": "ButtonComponent",
+            "id": "component-ButtonComponent-4ef205c97a334c309aa4001c8ab4a6d9571dcae18d0e85aaf0d367467ab5d3a9f13ab3573726f1fcb409bc9b49894dadfb80b1bbe1b6ba7041455ad9d4922004",
+            "file": "src/stories/button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-button",
+            "styleUrls": [
+                "./button.css"
+            ],
+            "styles": [],
+            "template": "<button   type=\"button\"\n   (click)=\"onClick.emit($event)\"\n   [ngClass]=\"classes\"\n   [ngStyle]=\"{ 'background-color': backgroundColor }\"\n >\n   {{ label }}\n </button>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "backgroundColor",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nWhat background color to use\n",
+                    "description": "<p>What background color to use</p>\n",
+                    "line": 26,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "'Button'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "pos": 711,
+                            "end": 724,
+                            "flags": 4227072,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 325,
+                            "tagName": {
+                                "pos": 712,
+                                "end": 720,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "required"
+                            },
+                            "comment": ""
+                        }
+                    ],
+                    "rawdescription": "\n\nButton contents\n\n",
+                    "description": "<p>Button contents</p>\n",
+                    "line": 40,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "primary",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nIs this the principal call to action on the page?\n",
+                    "description": "<p>Is this the principal call to action on the page?</p>\n",
+                    "line": 20,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'medium'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nHow large should the button be?\n",
+                    "description": "<p>How large should the button be?</p>\n",
+                    "line": 32,
+                    "type": "\"small\" | \"medium\" | \"large\"",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onClick",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nOptional click handler\n",
+                    "description": "<p>Optional click handler</p>\n",
+                    "line": 46,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-button',\n  template: ` <button\n    type=\"button\"\n    (click)=\"onClick.emit($event)\"\n    [ngClass]=\"classes\"\n    [ngStyle]=\"{ 'background-color': backgroundColor }\"\n  >\n    {{ label }}\n  </button>`,\n  styleUrls: ['./button.css'],\n})\nexport default class ButtonComponent {\n  /**\n   * Is this the principal call to action on the page?\n   */\n  @Input()\n  primary = false;\n\n  /**\n   * What background color to use\n   */\n  @Input()\n  backgroundColor?: string;\n\n  /**\n   * How large should the button be?\n   */\n  @Input()\n  size: 'small' | 'medium' | 'large' = 'medium';\n\n  /**\n   * Button contents\n   *\n   * @required\n   */\n  @Input()\n  label = 'Button';\n\n  /**\n   * Optional click handler\n   */\n  @Output()\n  onClick = new EventEmitter<Event>();\n\n  public get classes(): string[] {\n    const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';\n\n    return ['storybook-button', `storybook-button--${this.size}`, mode];\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".storybook-button {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-weight: 700;\n  border: 0;\n  border-radius: 3em;\n  cursor: pointer;\n  display: inline-block;\n  line-height: 1;\n}\n.storybook-button--primary {\n  color: white;\n  background-color: #1ea7fd;\n}\n.storybook-button--secondary {\n  color: #333;\n  background-color: transparent;\n  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;\n}\n.storybook-button--small {\n  font-size: 12px;\n  padding: 10px 16px;\n}\n.storybook-button--medium {\n  font-size: 14px;\n  padding: 11px 20px;\n}\n.storybook-button--large {\n  font-size: 16px;\n  padding: 12px 24px;\n}\n",
+                    "styleUrl": "./button.css"
+                }
+            ],
+            "stylesData": "",
+            "accessors": {
+                "classes": {
+                    "name": "classes",
+                    "getSignature": {
+                        "name": "classes",
+                        "type": "[]",
+                        "returnType": "string[]",
+                        "line": 48
+                    }
+                }
+            }
+        },
+        {
+            "name": "GroupBoxComponent",
+            "id": "component-GroupBoxComponent-a5277d94be0666ea8e5764ede06cf3880381f7df22a8c3feca550c9a0bf5a44648032bbbf79850511da6d102ba2c53f7d5a61c160f50b010cf881109539cc911",
+            "file": "src/app/atomics/organs/group-box/group-box.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-group-box",
+            "styleUrls": [
+                "./group-box.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./group-box.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "boxs",
+                    "defaultValue": "[\r\n    {\r\n      icon1:'fa-eye',\r\n      icon2:'fa-line-chart',\r\n      total:'total Views',\r\n      number:'308.402',\r\n      title:'Start from 1 Jan 2021',\r\n      color1: 'icon-color-green',\r\n      color2: 'icon-color-red'\r\n    },\r\n    {\r\n      icon1:'fa-shopping-bag',\r\n      icon2:'fa-line-chart',\r\n      total:'total Book',\r\n      number:'10.820',\r\n      title:'Add new Project',\r\n      color1: 'icon-color-green',\r\n      color2: 'icon-color-red'\r\n    },\r\n    {\r\n      icon1:'fa-user',\r\n      icon2:'fa-line-chart',\r\n      total:'total Users',\r\n      number:'8425',\r\n      title:'New user noted every week',\r\n      color1:'icon-color-blue',\r\n      color2: 'icon-color-green'\r\n    },\r\n    {\r\n      icon1:'fa-shopping-cart',\r\n      icon2:'fa-line-chart',\r\n      total:'total Sells',\r\n      number:'1.028.623',\r\n      title:'Start from 1 Jan 2021',\r\n      color1:'icon-color-lightGreen',\r\n      color2:'icon-color-green'\r\n    }\r\n  ]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 49,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-group-box',\r\n  templateUrl: './group-box.component.html',\r\n  styleUrls: ['./group-box.component.scss']\r\n})\r\nexport class GroupBoxComponent implements OnInit {\r\n  boxs= [\r\n    {\r\n      icon1:'fa-eye',\r\n      icon2:'fa-line-chart',\r\n      total:'total Views',\r\n      number:'308.402',\r\n      title:'Start from 1 Jan 2021',\r\n      color1: 'icon-color-green',\r\n      color2: 'icon-color-red'\r\n    },\r\n    {\r\n      icon1:'fa-shopping-bag',\r\n      icon2:'fa-line-chart',\r\n      total:'total Book',\r\n      number:'10.820',\r\n      title:'Add new Project',\r\n      color1: 'icon-color-green',\r\n      color2: 'icon-color-red'\r\n    },\r\n    {\r\n      icon1:'fa-user',\r\n      icon2:'fa-line-chart',\r\n      total:'total Users',\r\n      number:'8425',\r\n      title:'New user noted every week',\r\n      color1:'icon-color-blue',\r\n      color2: 'icon-color-green'\r\n    },\r\n    {\r\n      icon1:'fa-shopping-cart',\r\n      icon2:'fa-line-chart',\r\n      total:'total Sells',\r\n      number:'1.028.623',\r\n      title:'Start from 1 Jan 2021',\r\n      color1:'icon-color-lightGreen',\r\n      color2:'icon-color-green'\r\n    }\r\n  ]\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./group-box.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 46
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"font-medium text-xl py-6\">\r\n    DashBoard\r\n</div>\r\n<div class=\"grid grid-cols-12 gap-x-12\">\r\n    <div *ngFor=\"let box of boxs\" class=\"col-span-3\">\r\n        <app-molec-box [box]='box'></app-molec-box>\r\n    </div>\r\n</div>\r\n"
+        },
+        {
+            "name": "GroupCoinComponent",
+            "id": "component-GroupCoinComponent-46ab92aee787d57e52b323206a333ea5d7898feeb1b150d8a75f5b8d5e0e8a3548a3e3bc7ab746005ea432b83768ab9f2c0fcc398304742d5acac13a85103e50",
+            "file": "src/app/atomics/organs/group-coin/group-coin.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-group-coin",
+            "styleUrls": [
+                "./group-coin.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./group-coin.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-group-coin',\r\n  templateUrl: './group-coin.component.html',\r\n  styleUrls: ['./group-coin.component.scss']\r\n})\r\nexport class GroupCoinComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./group-coin.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<app-molec-header-coin></app-molec-header-coin>\r\n<app-molec-main-coin></app-molec-main-coin>"
+        },
+        {
+            "name": "GroupHeaderComponent",
+            "id": "component-GroupHeaderComponent-60a2c5cabe2ee436967bbe18a8947e8815e1c6cc6601534f8ec8a86b2bbcae64b65485be7c45d10a03000d29192ca809063ae07a4ac2b070e27788747d76fbd7",
+            "file": "src/app/atomics/organs/group-header/group-header.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-group-header",
+            "styleUrls": [
+                "./group-header.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./group-header.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-group-header',\r\n  templateUrl: './group-header.component.html',\r\n  styleUrls: ['./group-header.component.scss']\r\n})\r\nexport class GroupHeaderComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./group-header.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"h-24 bg-white relative flex items-center border-b-2\">\r\n    <div class=\"w-24 flex justify-center text-xl \">\r\n        <app-atom-icon [name]=\"'fa-square-o'\" class=\"text-[#438ffe] cursor-pointer -ml-2\"></app-atom-icon>\r\n    </div>\r\n    <div class=\" absolute  w-1.5 h-1.5 bg-[#fe764b] rounded-full\" style=\"right: 188px;top: 34px;\"></div>\r\n    <div class=\" absolute  w-1.5 h-1.5 bg-[#fe764b] rounded-full\" style=\"right: 152px;top: 34px;\"></div>\r\n    <app-molec-search class=\"pl-14\"></app-molec-search>\r\n    <div class=\"absolute right-20 flex text-[#c2c6d1] text-xl\">\r\n        <app-atom-icon [name]=\"'fa-commenting-o'\" class=\"mr-4\"></app-atom-icon>\r\n        <app-atom-icon [name]=\"'fa-bell-o'\"></app-atom-icon>\r\n        <img src=\"assets/img/manh.jpg\" width=\"30px\" height=\"30px\" class=\"rounded-full mx-4 cursor-pointer\" alt=\"\">\r\n        <app-atom-icon [name]=\"'fa-angle-down'\"></app-atom-icon>\r\n    </div>\r\n</div>"
+        },
+        {
+            "name": "GroupLeftComponent",
+            "id": "component-GroupLeftComponent-3d43dec97cf346cc291979f714b4505c0412cf053038babd322f1deba0ea4123d0c5a6cf2db0e431880ab874cc8c08470834b859208929a6d7ec1044708800b2",
+            "file": "src/app/atomics/organs/group-left/group-left.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-group-left",
+            "styleUrls": [
+                "./group-left.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./group-left.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "icons",
+                    "defaultValue": "[\r\n    'fa-shopping-cart','fa-file-text', 'fa-cog'\r\n  ]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                },
+                {
+                    "name": "icons2",
+                    "defaultValue": "[\r\n   'fa-circle','fa-sign-out'\r\n  ]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 12
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 18,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-group-left',\r\n  templateUrl: './group-left.component.html',\r\n  styleUrls: ['./group-left.component.scss']\r\n})\r\nexport class GroupLeftComponent implements OnInit {\r\n  icons = [\r\n    'fa-shopping-cart','fa-file-text', 'fa-cog'\r\n  ]\r\n  icons2 = [\r\n   'fa-circle','fa-sign-out'\r\n  ]\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./group-left.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 14
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"w-24 h-full bg-white relative text-xl -ml-0.5\">\r\n    <div class=\"flex flex-col items-center justify-center\">\r\n        <app-atom-icon class=\"cursor-pointer text-[#438ffe] py-4 mt-3\" [name]=\"'fa-plus-square-o'\"></app-atom-icon>\r\n        <div *ngFor=\"let icon of icons\" class=\"py-4 text-[#abb1bf]\">\r\n            <app-atom-icon class=\"cursor-pointer\" [name]='icon'></app-atom-icon>\r\n        </div>\r\n        <div class=\"flex flex-col text-[#abb1bf] absolute bottom-5\">\r\n            <div *ngFor=\"let icon of icons2\" class=\"py-5\" >\r\n                <app-atom-icon [name]=\"icon\"></app-atom-icon>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n"
+        },
+        {
+            "name": "GroupListComponent",
+            "id": "component-GroupListComponent-9f82f003d8a38923af5bca6da0fabece99594fdefdedd3cd68d0981223fb7f858016fb6bb59348c0de263f230a41a004d7424e70800b5c7010779a8c495d53f2",
+            "file": "src/app/atomics/organs/group-list/group-list.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-group-list",
+            "styleUrls": [
+                "./group-list.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./group-list.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "items",
+                    "defaultValue": "[\r\n    {\r\n      no:'1',\r\n      img:'anh1.jpg',\r\n      book:'News Mobile App UI KIT F.',\r\n      author:'Cam Thuong',\r\n      sold:'10',\r\n      view:'320'\r\n    },\r\n    {\r\n      no:'2',\r\n      img:'anh2.jpg',\r\n      book:'News Mobile App UI KIT F.',\r\n      author:'Cam Thuong',\r\n      sold:'10',\r\n      view:'320'\r\n    },\r\n    {\r\n      no:'3',\r\n      img:'anh3.jpg',\r\n      book:'News Mobile App UI KIT F.',\r\n      author:'Cam Thuong',\r\n      sold:'10',\r\n      view:'320'\r\n    },\r\n    {\r\n      no:'4',\r\n      img:'anh4.jpg',\r\n      book:'News Mobile App UI KIT F.',\r\n      author:'Cam Thuong',\r\n      sold:'10',\r\n      view:'320'\r\n    },\r\n  ]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 45,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-group-list',\r\n  templateUrl: './group-list.component.html',\r\n  styleUrls: ['./group-list.component.scss']\r\n})\r\nexport class GroupListComponent implements OnInit {\r\n  items=[\r\n    {\r\n      no:'1',\r\n      img:'anh1.jpg',\r\n      book:'News Mobile App UI KIT F.',\r\n      author:'Cam Thuong',\r\n      sold:'10',\r\n      view:'320'\r\n    },\r\n    {\r\n      no:'2',\r\n      img:'anh2.jpg',\r\n      book:'News Mobile App UI KIT F.',\r\n      author:'Cam Thuong',\r\n      sold:'10',\r\n      view:'320'\r\n    },\r\n    {\r\n      no:'3',\r\n      img:'anh3.jpg',\r\n      book:'News Mobile App UI KIT F.',\r\n      author:'Cam Thuong',\r\n      sold:'10',\r\n      view:'320'\r\n    },\r\n    {\r\n      no:'4',\r\n      img:'anh4.jpg',\r\n      book:'News Mobile App UI KIT F.',\r\n      author:'Cam Thuong',\r\n      sold:'10',\r\n      view:'320'\r\n    },\r\n  ]\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./group-list.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 42
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"bg-white pb-2\">\r\n    <app-atom-menu-list></app-atom-menu-list>\r\n    <div *ngFor=\"let item of items\" class=\"bg-[#f5f7f9] my-4 py-2 mx-4\">\r\n        <app-molec-list [item]=\"item\"></app-molec-list>\r\n    </div>\r\n</div>\r\n"
+        },
+        {
+            "name": "HeaderComponent",
+            "id": "component-HeaderComponent-a557eec14f72c438a8033301f4d6ce023e0a1844a3b06ec2b38794a612acc31735ae78a5ee10071b230c8c20d699eb914554e69d07ade54adb371da8efb464cc",
+            "file": "src/stories/header.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-header",
+            "styleUrls": [
+                "./header.css"
+            ],
+            "styles": [],
+            "template": "<header>    <div class=\"wrapper\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <div *ngIf=\"user\">\n          <span class=\"welcome\">\n            Welcome, <b>{{ user.name }}</b\n            >!\n          </span>\n          <storybook-button\n            *ngIf=\"user\"\n            size=\"small\"\n            (onClick)=\"onLogout.emit($event)\"\n            label=\"Log out\"\n          ></storybook-button>\n        </div>\n        <div *ngIf=\"!user\">\n          <storybook-button\n            *ngIf=\"!user\"\n            size=\"small\"\n            class=\"margin-left\"\n            (onClick)=\"onLogin.emit($event)\"\n            label=\"Log in\"\n          ></storybook-button>\n          <storybook-button\n            *ngIf=\"!user\"\n            primary\n            size=\"small\"\n            primary=\"true\"\n            class=\"margin-left\"\n            (onClick)=\"onCreateAccount.emit($event)\"\n            label=\"Sign up\"\n          ></storybook-button>\n        </div>\n      </div>\n    </div>\n  </header>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 65,
+                    "type": "User | null",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onCreateAccount",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 74,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogin",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 68,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogout",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 71,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\nimport { User } from './User';\n\n@Component({\n  selector: 'storybook-header',\n  template: `<header>\n    <div class=\"wrapper\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <div *ngIf=\"user\">\n          <span class=\"welcome\">\n            Welcome, <b>{{ user.name }}</b\n            >!\n          </span>\n          <storybook-button\n            *ngIf=\"user\"\n            size=\"small\"\n            (onClick)=\"onLogout.emit($event)\"\n            label=\"Log out\"\n          ></storybook-button>\n        </div>\n        <div *ngIf=\"!user\">\n          <storybook-button\n            *ngIf=\"!user\"\n            size=\"small\"\n            class=\"margin-left\"\n            (onClick)=\"onLogin.emit($event)\"\n            label=\"Log in\"\n          ></storybook-button>\n          <storybook-button\n            *ngIf=\"!user\"\n            primary\n            size=\"small\"\n            primary=\"true\"\n            class=\"margin-left\"\n            (onClick)=\"onCreateAccount.emit($event)\"\n            label=\"Sign up\"\n          ></storybook-button>\n        </div>\n      </div>\n    </div>\n  </header>`,\n  styleUrls: ['./header.css'],\n})\nexport default class HeaderComponent {\n  @Input()\n  user: User | null = null;\n\n  @Output()\n  onLogin = new EventEmitter<Event>();\n\n  @Output()\n  onLogout = new EventEmitter<Event>();\n\n  @Output()\n  onCreateAccount = new EventEmitter<Event>();\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".wrapper {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.1);\n  padding: 15px 20px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\nsvg {\n  display: inline-block;\n  vertical-align: top;\n}\n\nh1 {\n  font-weight: 900;\n  font-size: 20px;\n  line-height: 1;\n  margin: 6px 0 6px 10px;\n  display: inline-block;\n  vertical-align: top;\n}\n\nbutton + button {\n  margin-left: 10px;\n}\n\n.welcome {\n  color: #333;\n  font-size: 14px;\n  margin-right: 10px;\n}\n",
+                    "styleUrl": "./header.css"
+                }
+            ],
+            "stylesData": ""
+        },
+        {
+            "name": "MolecBoxComponent",
+            "id": "component-MolecBoxComponent-b4ab0f94a9a524bbf27dc1603a851dfd87a9ac5dab12a4dcfd5e02ce192ffdd77f94488c85a425b5f99562a8363c54fe9bfc0db0a14d8da495786ded4e9e91d9",
+            "file": "src/app/atomics/molecs/molec-box/molec-box.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-molec-box",
+            "styleUrls": [
+                "./molec-box.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./molec-box.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "box",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "any",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 13,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-molec-box',\r\n  templateUrl: './molec-box.component.html',\r\n  styleUrls: ['./molec-box.component.scss']\r\n})\r\nexport class MolecBoxComponent implements OnInit {\r\n  @Input() box!: any;\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".box:hover .box1 {\r\n    background-color: #559afe;\r\n    color: white;\r\n}\r\n.box:hover .box1 i {\r\n    color: white;\r\n}\r\n.box:hover i {\r\n    color: white;\r\n}\r\n.icon-color-green{\r\n    color: #8bc38a;\r\n}\r\n.icon-color-red{\r\n    color: #fe7d54;\r\n}\r\n.icon-color-blue{\r\n    color: #438ffe;\r\n}\r\n.icon-color-lightGreen{\r\n    color: #83bcbd;\r\n}",
+                    "styleUrl": "./molec-box.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 9
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"bg-white hover:bg-[#438FFE] w-full px-4 pt-4 pb-2 text-black hover:text-white box cursor-pointer\"> \r\n    <div class=\"flex justify-between items-center\">\r\n        <div class=\"flex justify-center items-center h-12 w-12 bg-[#f4f9f4] box1\">\r\n            <i class=\"fa {{box.icon1}} {{box.color1}} text-2xl\" aria-hidden=\"true\"></i>\r\n        </div>\r\n        <i class=\"fa {{box.icon2}} {{box.color2}} text-5xl\" aria-hidden=\"true\"></i>\r\n    </div>\r\n    <div class=\"py-1\">{{box.total}}</div>\r\n    <div class=\"font-semibold text-xl\">{{box.number}}</div>\r\n    <div class=\"border-t pt-2 mt-6\">{{box.title}}</div>\r\n</div>"
+        },
+        {
+            "name": "MolecHeaderCoinComponent",
+            "id": "component-MolecHeaderCoinComponent-b13ed99fc79864c48af3d85a21b3e9112a9c6b45a6a7054089df0e992a96c89a2c587d59f0bb967714416eb5e135867233fe811896053fd741da6cecacf80fd4",
+            "file": "src/app/atomics/molecs/molec-header-coin/molec-header-coin.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-molec-header-coin",
+            "styleUrls": [
+                "./molec-header-coin.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./molec-header-coin.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-molec-header-coin',\r\n  templateUrl: './molec-header-coin.component.html',\r\n  styleUrls: ['./molec-header-coin.component.scss']\r\n})\r\nexport class MolecHeaderCoinComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./molec-header-coin.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"flex items-center py-6 justify-center relative\">\r\n    <div class=\"text-5xl text-green-900\">Danh Sách Mua Coin</div>\r\n    <div class=\"bg-green-500 absolute px-6 py-2 rounded-full text-white right-20 cursor-pointer\">Logout</div>\r\n</div>\r\n\r\n\r\n"
+        },
+        {
+            "name": "MolecListComponent",
+            "id": "component-MolecListComponent-9c95330944274710d20731f1feb1a1c88d8277660a425b31568a96288a7b53b01717509036525b1eb8bb4a634f8a254b1bd81661734c147e063cc638e67986f6",
+            "file": "src/app/atomics/molecs/molec-list/molec-list.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-molec-list",
+            "styleUrls": [
+                "./molec-list.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./molec-list.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "item",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "any",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-molec-list',\r\n  templateUrl: './molec-list.component.html',\r\n  styleUrls: ['./molec-list.component.scss']\r\n})\r\nexport class MolecListComponent implements OnInit {\r\n  @Input() item!:any;\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./molec-list.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 9
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"font-semibold grid grid-cols-10 px-4 gap-x-4\">\r\n    <div class=\"col-span-1 pl-1 flex items-center\">{{item.no}}</div>\r\n    <div class=\"col-span-5 flex\">\r\n        <div class=\"w-20\">\r\n            <img src=\"assets/img/{{item.img}}\" class=\"w-full\" alt=\"\">\r\n        </div>\r\n        <div class=\"ml-4 flex items-center\">\r\n            {{item.book}}\r\n        </div>\r\n    </div>\r\n    <div class=\"col-span-2 flex items-center text-[#7eb2fc]\">{{item.author}}</div>\r\n    <div class=\"col-span-1 flex items-center\">{{item.sold}}</div>\r\n    <div class=\"col-span-1 flex items-center\">{{item.view}}</div>\r\n</div>\r\n"
+        },
+        {
+            "name": "MolecMainCoinComponent",
+            "id": "component-MolecMainCoinComponent-17675bf994b4785e1d96d14180bd57300115dc3cd6d48a2e2368f4b3e8b3da29c184da56bf155fa058cce4113c4d654c795f50af3285a16ed38a2ead57b36df2",
+            "file": "src/app/atomics/molecs/molec-main-coin/molec-main-coin.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-molec-main-coin",
+            "styleUrls": [
+                "./molec-main-coin.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./molec-main-coin.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "icons",
+                    "defaultValue": "[\r\n  {\r\n    name:'Nhả Coi'\r\n  },\r\n  {\r\n    name:'Lưu Trữ'\r\n  },\r\n  {\r\n    name:'Thừa Tiền'\r\n  },\r\n  {\r\n    name:'Thiếu Tiền'\r\n  },\r\n]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 32
+                },
+                {
+                    "name": "items",
+                    "defaultValue": "[\r\n  {\r\n  userName:'Username: hiepxanh',\r\n  code:'Mã nạp tiền: 7c2gtf',\r\n  money:'Số tiền: đ10,000 (Bank)',\r\n  time:'Thời gian: 01/03/2022 15:09'\r\n  }\r\n]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                },
+                {
+                    "name": "menu",
+                    "defaultValue": "[\r\n  {\r\n    menu:'Chưa Giải Quyết',\r\n  },\r\n  {\r\n    menu:'Có Vấn Đề',\r\n  },\r\n  {\r\n    menu:'Lưu Trữ',\r\n\r\n  },\r\n  {\r\n    menu:'Đã Nạp',\r\n  }\r\n]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 17
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 49,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-molec-main-coin',\r\n  templateUrl: './molec-main-coin.component.html',\r\n  styleUrls: ['./molec-main-coin.component.scss']\r\n})\r\nexport class MolecMainCoinComponent implements OnInit {\r\nitems =[\r\n  {\r\n  userName:'Username: hiepxanh',\r\n  code:'Mã nạp tiền: 7c2gtf',\r\n  money:'Số tiền: đ10,000 (Bank)',\r\n  time:'Thời gian: 01/03/2022 15:09'\r\n  }\r\n]\r\nmenu=[\r\n  {\r\n    menu:'Chưa Giải Quyết',\r\n  },\r\n  {\r\n    menu:'Có Vấn Đề',\r\n  },\r\n  {\r\n    menu:'Lưu Trữ',\r\n\r\n  },\r\n  {\r\n    menu:'Đã Nạp',\r\n  }\r\n]\r\nicons=[\r\n  {\r\n    name:'Nhả Coi'\r\n  },\r\n  {\r\n    name:'Lưu Trữ'\r\n  },\r\n  {\r\n    name:'Thừa Tiền'\r\n  },\r\n  {\r\n    name:'Thiếu Tiền'\r\n  },\r\n]\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./molec-main-coin.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 45
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"bg-slate-300 h-screen mx-40 overflow-auto\">\r\n    <div class=\"flex py-3 font-bold text-2xl bg-slate-200 text-slate-600 \">\r\n        <div *ngFor=\"let menu of menu\">\r\n            <div class=\"pl-5\">{{menu.menu}}</div>\r\n        </div>\r\n    </div>\r\n    <div class=\"grid grid-cols-10 my-6 mx-10\">\r\n        <div class=\"col-span-6 bg-green-900 rounded-l-lg text-white pl-4 py-1\">\r\n            <div *ngFor=\"let item of items\" class=\"py-2\">\r\n                <div class=\"py-1\">{{item.userName}}</div>\r\n                <div class=\"py-1\">{{item.code}} </div>\r\n                <div class=\"py-1\">{{item.money}}</div>\r\n                <div class=\"py-1\">{{item.time}}</div>\r\n            </div>\r\n        </div>\r\n        <div class=\"col-span-4 bg-slate-200 rounded-r-lg flex justify-center items-center\">\r\n            <div class=\"grid grid-cols-12 \">\r\n                <div *ngFor=\"let icon of icons\" class=\"col-span-6\">\r\n                    <div><app-atom-btn-coin [word]=\"icon.name\"></app-atom-btn-coin></div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n    "
+        },
+        {
+            "name": "MolecSearchComponent",
+            "id": "component-MolecSearchComponent-2ed6612979106afa9be3a1cf43c046e10b8e102bf88788ac01c82354951b41e21793dcfd6393fd6dd2f41872ab038e694f1e0e8d76cc7845030c1c3c5c08ee22",
+            "file": "src/app/atomics/molecs/molec-search/molec-search.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-molec-search",
+            "styleUrls": [
+                "./molec-search.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./molec-search.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-molec-search',\r\n  templateUrl: './molec-search.component.html',\r\n  styleUrls: ['./molec-search.component.scss']\r\n})\r\nexport class MolecSearchComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./molec-search.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<form class=\"flex items-center\">\r\n  <app-atom-input></app-atom-input>\r\n  <app-atom-btn-search></app-atom-btn-search>\r\n</form>\r\n  "
+        },
+        {
+            "name": "PageCoinComponent",
+            "id": "component-PageCoinComponent-2276ae505a7390eed04467aa1fbb7f70d44be95552c5ce27527699964d2e2fde8b1b4685d38df2f067813398e985be60c13069524a8b1d08d9e538b0d13aaa6e",
+            "file": "src/app/pages/page-coin/page-coin.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-page-coin",
+            "styleUrls": [
+                "./page-coin.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./page-coin.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-page-coin',\r\n  templateUrl: './page-coin.component.html',\r\n  styleUrls: ['./page-coin.component.scss']\r\n})\r\nexport class PageCoinComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./page-coin.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<app-teamplate-coin></app-teamplate-coin>"
+        },
+        {
+            "name": "PageComponent",
+            "id": "component-PageComponent-7126d8c2607c946741c651482413b43feb72b2d63cac9d3ac173fde206a5e635eb4cdbf7ca7ac9327c7d4d05cf7ef619144c34c11609ad677081d0ee4e855064",
+            "file": "src/stories/page.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-page",
+            "styleUrls": [
+                "./page.css"
+            ],
+            "styles": [],
+            "template": "<article>    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"doLogout()\"\n      (onLogin)=\"doLogin()\"\n      (onCreateAccount)=\"doCreateAccount()\"\n    ></storybook-header>\n    <section>\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Storybook tutorials\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "User | null",
+                    "optional": false,
+                    "description": "",
+                    "line": 64
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "doCreateAccount",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 74,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "doLogin",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 70,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "doLogout",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 66,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { User } from './User';\n\n@Component({\n  selector: 'storybook-page',\n  template: `<article>\n    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"doLogout()\"\n      (onLogin)=\"doLogin()\"\n      (onCreateAccount)=\"doCreateAccount()\"\n    ></storybook-header>\n    <section>\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Storybook tutorials\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>`,\n  styleUrls: ['./page.css'],\n})\nexport default class PageComponent {\n  user: User | null = null;\n\n  doLogout() {\n    this.user = null;\n  }\n\n  doLogin() {\n    this.user = { name: 'Jane Doe' };\n  }\n\n  doCreateAccount() {\n    this.user = { name: 'Jane Doe' };\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "section {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  line-height: 24px;\n  padding: 48px 20px;\n  margin: 0 auto;\n  max-width: 600px;\n  color: #333;\n}\n\nsection h2 {\n  font-weight: 900;\n  font-size: 32px;\n  line-height: 1;\n  margin: 0 0 4px;\n  display: inline-block;\n  vertical-align: top;\n}\n\nsection p {\n  margin: 1em 0;\n}\n\nsection a {\n  text-decoration: none;\n  color: #1ea7fd;\n}\n\nsection ul {\n  padding-left: 30px;\n  margin: 1em 0;\n}\n\nsection li {\n  margin-bottom: 8px;\n}\n\nsection .tip {\n  display: inline-block;\n  border-radius: 1em;\n  font-size: 11px;\n  line-height: 12px;\n  font-weight: 700;\n  background: #e7fdd8;\n  color: #66bf3c;\n  padding: 4px 12px;\n  margin-right: 10px;\n  vertical-align: top;\n}\n\nsection .tip-wrapper {\n  font-size: 13px;\n  line-height: 20px;\n  margin-top: 40px;\n  margin-bottom: 40px;\n}\n\nsection .tip-wrapper svg {\n  display: inline-block;\n  height: 12px;\n  width: 12px;\n  margin-right: 4px;\n  vertical-align: top;\n  margin-top: 3px;\n}\n\nsection .tip-wrapper svg path {\n  fill: #1ea7fd;\n}\n",
+                    "styleUrl": "./page.css"
+                }
+            ],
+            "stylesData": ""
+        },
+        {
+            "name": "PageDashBoardComponent",
+            "id": "component-PageDashBoardComponent-00eda77ce6ecccea934eb94e6bb4caadc29f8e9ebce51698651ed94f17b7f9081b1fdf7663dd00b752b4cb3dbe2ab8d7766337e88deaf526c5fa14182eb3b02a",
+            "file": "src/app/pages/page-dash-board/page-dash-board.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-page-dash-board",
+            "styleUrls": [
+                "./page-dash-board.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./page-dash-board.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-page-dash-board',\r\n  templateUrl: './page-dash-board.component.html',\r\n  styleUrls: ['./page-dash-board.component.scss']\r\n})\r\nexport class PageDashBoardComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./page-dash-board.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<app-teamplate-dash-board></app-teamplate-dash-board>\r\n"
+        },
+        {
+            "name": "TeamplateCoinComponent",
+            "id": "component-TeamplateCoinComponent-a935aec8df8cb5ea339031461996d7f9e40a16d2a213fafcddd8b613a322547a0d5ba491a9d3bd8ac882fb3bab21a07ccb9a95acbdac3370d7698ffe8fa4215c",
+            "file": "src/app/atomics/teamplates/teamplate-coin/teamplate-coin.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-teamplate-coin",
+            "styleUrls": [
+                "./teamplate-coin.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./teamplate-coin.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-teamplate-coin',\r\n  templateUrl: './teamplate-coin.component.html',\r\n  styleUrls: ['./teamplate-coin.component.scss']\r\n})\r\nexport class TeamplateCoinComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./teamplate-coin.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<app-group-coin></app-group-coin>"
+        },
+        {
+            "name": "TeamplateDashBoardComponent",
+            "id": "component-TeamplateDashBoardComponent-bb84087e14001c41c9a20e1e6b43e3c97ac9d057fcf3f40cc2f5575751f414f8000c8cd34d392ae6976a90ceaff45a0adf9aa0d547e319267bafeae2c5c14009",
+            "file": "src/app/atomics/teamplates/teamplate-dash-board/teamplate-dash-board.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-teamplate-dash-board",
+            "styleUrls": [
+                "./teamplate-dash-board.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./teamplate-dash-board.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-teamplate-dash-board',\r\n  templateUrl: './teamplate-dash-board.component.html',\r\n  styleUrls: ['./teamplate-dash-board.component.scss']\r\n})\r\nexport class TeamplateDashBoardComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./teamplate-dash-board.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"bg-[#f8f8f8]\">\r\n    <app-group-header></app-group-header>\r\n    <div class=\"grid grid-cols-10\">\r\n        <div class=\"col-span-1\">\r\n            <app-group-left></app-group-left>\r\n        </div>\r\n        <div class=\"col-span-9 pr-12\">\r\n            <app-group-box></app-group-box>\r\n            <div class=\"grid grid-cols-11 gap-x-6 mt-8\">\r\n                <app-group-list class=\"col-span-7\"></app-group-list>\r\n                <div class=\"col-span-4\">Chart</div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n"
+        }
+    ],
+    "modules": [
+        {
+            "name": "AppModule",
+            "id": "module-AppModule-be3bffcd2a80792a459f1afa0cddc5484ef6184a8a5560b574eda1b573ed1f2a39a634171341d4be403f044da9269be3f4c5ce573a26c74f8a48f8e98f0d512d",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\nimport AtomIconComponent from './atomics/atoms/atom-icon/atom-icon.component';\r\nimport { AppRoutingModule } from './app-routing.module';\r\nimport { AppComponent } from './app.component';\r\nimport { AtomBtnSearchComponent} from './atomics/atoms/atom-btn-search/atom-btn-search.component';\r\nimport { AtomInputComponent } from './atomics/atoms/atom-input/atom-input.component';\r\nimport { AtomMenuListComponent } from './atomics/atoms/atom-menu-list/atom-menu-list.component';\r\nimport { MolecBoxComponent } from './atomics/molecs/molec-box/molec-box.component';\r\nimport { MolecListComponent } from './atomics/molecs/molec-list/molec-list.component';\r\nimport { MolecSearchComponent } from './atomics/molecs/molec-search/molec-search.component';\r\nimport { GroupBoxComponent } from './atomics/organs/group-box/group-box.component';\r\nimport { GroupListComponent } from './atomics/organs/group-list/group-list.component';\r\nimport { GroupHeaderComponent } from './atomics/organs/group-header/group-header.component';\r\nimport { GroupLeftComponent } from './atomics/organs/group-left/group-left.component';\r\nimport { PageCoinComponent } from './pages/page-coin/page-coin.component';\r\nimport { AtomBtnCoinComponent } from './atomics/atoms/atom-btn-coin/atom-btn-coin.component';\r\nimport { MolecHeaderCoinComponent } from './atomics/molecs/molec-header-coin/molec-header-coin.component';\r\nimport { MolecMainCoinComponent } from './atomics/molecs/molec-main-coin/molec-main-coin.component';\r\nimport { GroupCoinComponent } from './atomics/organs/group-coin/group-coin.component';\r\nimport { TeamplateCoinComponent } from './atomics/teamplates/teamplate-coin/teamplate-coin.component';\r\nimport { PageDashBoardComponent } from './pages/page-dash-board/page-dash-board.component';\r\nimport { TeamplateDashBoardComponent } from './atomics/teamplates/teamplate-dash-board/teamplate-dash-board.component';\r\n\r\n\r\n\r\n\r\n@NgModule({\r\n  declarations: [\r\n    AppComponent,\r\n    AtomIconComponent,\r\n    AtomBtnSearchComponent,\r\n    AtomInputComponent,\r\n    AtomMenuListComponent,\r\n    MolecBoxComponent,\r\n    MolecListComponent,\r\n    MolecSearchComponent,\r\n    GroupBoxComponent,\r\n    GroupListComponent,\r\n    GroupHeaderComponent,\r\n    GroupLeftComponent,\r\n    PageCoinComponent,\r\n    AtomBtnCoinComponent,\r\n    MolecHeaderCoinComponent,\r\n    MolecMainCoinComponent,\r\n    GroupCoinComponent,\r\n    TeamplateCoinComponent,\r\n    PageDashBoardComponent,\r\n    TeamplateDashBoardComponent,\r\n  \r\n    \r\n  ],\r\n  imports: [\r\n    BrowserModule,\r\n    AppRoutingModule,\r\n   \r\n   \r\n\r\n  ],\r\n  providers: [],\r\n  bootstrap: [AppComponent]\r\n})\r\nexport class AppModule { }\r\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        },
+                        {
+                            "name": "AtomBtnCoinComponent"
+                        },
+                        {
+                            "name": "AtomBtnSearchComponent"
+                        },
+                        {
+                            "name": "AtomIconComponent"
+                        },
+                        {
+                            "name": "AtomInputComponent"
+                        },
+                        {
+                            "name": "AtomMenuListComponent"
+                        },
+                        {
+                            "name": "GroupBoxComponent"
+                        },
+                        {
+                            "name": "GroupCoinComponent"
+                        },
+                        {
+                            "name": "GroupHeaderComponent"
+                        },
+                        {
+                            "name": "GroupLeftComponent"
+                        },
+                        {
+                            "name": "GroupListComponent"
+                        },
+                        {
+                            "name": "MolecBoxComponent"
+                        },
+                        {
+                            "name": "MolecHeaderCoinComponent"
+                        },
+                        {
+                            "name": "MolecListComponent"
+                        },
+                        {
+                            "name": "MolecMainCoinComponent"
+                        },
+                        {
+                            "name": "MolecSearchComponent"
+                        },
+                        {
+                            "name": "PageCoinComponent"
+                        },
+                        {
+                            "name": "PageDashBoardComponent"
+                        },
+                        {
+                            "name": "TeamplateCoinComponent"
+                        },
+                        {
+                            "name": "TeamplateDashBoardComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "AppRoutingModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AppRoutingModule",
+            "id": "module-AppRoutingModule-849c20409d9aaeb65084fda8553d8889296241bba4e20448635188ecea41b25d9966d9ad93b2d616e46adb81f8ad085156e6c8c3711e0f90dc45607a49350529",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app-routing.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { RouterModule, Routes } from '@angular/router';\r\nimport { PageCoinComponent } from './pages/page-coin/page-coin.component';\r\nimport { PageDashBoardComponent } from './pages/page-dash-board/page-dash-board.component';\r\n\r\n\r\nconst routes: Routes = [\r\n  {\r\n    path: '',\r\n    component: PageDashBoardComponent,\r\n  },\r\n  {\r\n    path: 'coin',\r\n    component: PageCoinComponent,\r\n  }\r\n];\r\n\r\n@NgModule({\r\n  imports: [RouterModule.forRoot(routes)],\r\n  exports: [RouterModule]\r\n})\r\nexport class AppRoutingModule { }\r\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        }
+    ],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\r\n  production: false\r\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.prod.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\r\n  production: true\r\n}"
+            },
+            {
+                "name": "Large",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedIn",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedIn",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedOut",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedOut",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Secondary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Small",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<Button>",
+                "defaultValue": "(args: Button) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<Header>",
+                "defaultValue": "(args: Header) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<Page>",
+                "defaultValue": "(args: Page) => ({\n  props: args,\n})"
+            }
+        ],
+        "functions": [],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n  production: false\r\n}"
+                }
+            ],
+            "src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.prod.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n  production: true\r\n}"
+                }
+            ],
+            "src/stories/Button.stories.ts": [
+                {
+                    "name": "Large",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Secondary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Small",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<Button>",
+                    "defaultValue": "(args: Button) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/stories/Header.stories.ts": [
+                {
+                    "name": "LoggedIn",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "LoggedOut",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<Header>",
+                    "defaultValue": "(args: Header) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/stories/Page.stories.ts": [
+                {
+                    "name": "LoggedIn",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "LoggedOut",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<Page>",
+                    "defaultValue": "(args: Page) => ({\n  props: args,\n})"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    },
+    "routes": {
+        "name": "<root>",
+        "kind": "module",
+        "className": "AppModule",
+        "children": [
+            {
+                "name": "routes",
+                "filename": "src/app/app-routing.module.ts",
+                "module": "AppRoutingModule",
+                "children": [
+                    {
+                        "path": "",
+                        "component": "PageDashBoardComponent"
+                    },
+                    {
+                        "path": "coin",
+                        "component": "PageCoinComponent"
+                    }
+                ],
+                "kind": "module"
+            }
+        ]
+    },
+    "coverage": {
+        "count": 2,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/atomics/atoms/atom-btn-coin/atom-btn-coin.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AtomBtnCoinComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/atomics/atoms/atom-btn-search/atom-btn-search.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AtomBtnSearchComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/atomics/atoms/atom-icon/atom-icon.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AtomIconComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/8",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/atomics/atoms/atom-input/atom-input.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AtomInputComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/atomics/atoms/atom-menu-list/atom-menu-list.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AtomMenuListComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/atomics/molecs/molec-box/molec-box.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "MolecBoxComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/atomics/molecs/molec-header-coin/molec-header-coin.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "MolecHeaderCoinComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/atomics/molecs/molec-list/molec-list.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "MolecListComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/atomics/molecs/molec-main-coin/molec-main-coin.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "MolecMainCoinComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/atomics/molecs/molec-search/molec-search.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "MolecSearchComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/atomics/organs/group-box/group-box.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "GroupBoxComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/atomics/organs/group-coin/group-coin.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "GroupCoinComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/atomics/organs/group-header/group-header.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "GroupHeaderComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/atomics/organs/group-left/group-left.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "GroupLeftComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/atomics/organs/group-list/group-list.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "GroupListComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/atomics/teamplates/teamplate-coin/teamplate-coin.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TeamplateCoinComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/atomics/teamplates/teamplate-dash-board/teamplate-dash-board.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TeamplateDashBoardComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/page-coin/page-coin.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PageCoinComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/page-dash-board/page-dash-board.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PageDashBoardComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.prod.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Large",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Secondary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Small",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedIn",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedOut",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedIn",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedOut",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/User.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "User",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonComponent",
+                "coveragePercent": 83,
+                "coverageCount": "5/6",
+                "status": "very-good"
+            },
+            {
+                "filePath": "src/stories/header.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "HeaderComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/page.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PageComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            }
+        ]
+    }
+}
