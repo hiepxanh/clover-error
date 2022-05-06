@@ -10,7 +10,8 @@
     "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
     "storybook": "npm run docs:json && start-storybook -p 6006",
     "build-storybook": "npm run docs:json && build-storybook",
-    "build-error": "ng build -c development && ng run DaskBoard2:server:development && node dist/server/main.js"
+    "build-error": "ng build -c development && ng run DaskBoard2:server:development && node dist/server/main.js",
+    "start-error": "node dist/server/main.js"
   },
   "private": true,
   "dependencies": {
