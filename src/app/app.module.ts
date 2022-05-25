@@ -28,6 +28,8 @@ import { RendererModule, TransferHttpCacheModule } from '@nguniversal/common/clo
 // import { registerLocaleData } from '@angular/common';
 // import localeCs from '@angular/common/locales/cs';
 // registerLocaleData(localeCs);
+
+
 @NgModule({
   declarations: [
     AppComponent,
